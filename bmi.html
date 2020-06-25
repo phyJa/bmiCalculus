@@ -7,9 +7,17 @@
 </head>
 <body>
     <h2>This is a page that calculates your Body Mass Index (BMI)</h2>
-    <form action="#">
-        Put your mass (in kg):
-        <input type="text"/>
-    </form>
+    <!-- Take mass -->
+    <p>Put your mass (in kg):</p> 
+    <input type="number" id="mass" placeholder="Type your mass (only numbers)"/>
+    <!-- Take the height -->
+    <p>Now your height (in meters):</p>
+    <input type="number" id="height" placeholder="Type your height in meters (only numbers)">
+    <!-- The button to activate the script -->
+    <button type="button" onclick="calculate()"> Calculate </button>
+    <!--Show the answer: -->
+    <p id="answer"></p>
+    <!--Scrripts-->
+    <script src="bmi.js"></script>
 </body>
 </html>
