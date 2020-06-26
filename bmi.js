@@ -12,7 +12,7 @@ function calculate() {
     const bmi = mass / (height * height);
     //Printing the messsages
     message.innerHTML = `Your BMI is ${bmi}.`;
-    //Stablish the conditional
+    //Stablishing the conditional
     if(bmi > 30) {
         message2.style.color = "red";
         message2.innerHTML = "Warning! You are overweight.";
