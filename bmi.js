@@ -11,7 +11,7 @@ function calculate() {
     const mass = document.getElementById("mass").value;
     const bmi = mass / (height * height);
     //Printing the messsages
-    message.innerHTML = `Your BMI is ${bmi}.`;
+    message.innerHTML = `Your BMI is ${bmi} kg/m<sup>2</sup>.`;
     //Stablishing the conditional
     if(bmi > 30) {
         message2.style.color = "red";
