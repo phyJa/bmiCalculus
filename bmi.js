@@ -7,13 +7,17 @@ function calculate() {
     message.innerHTML = "";
     message2.innerHTML = "";
     //Declaring the constants
-    const height = document.getElementById("height").value;
-    const mass = document.getElementById("mass").value;
-    const bmi = mass / (height * height);
+    const personData = {
+        height: document.getElementById("height").value,
+        mass: document.getElementById("mass").value,
+        bmi: function() {
+            return this.mass / (this.height * this.height);
+        }
+    };
     //Printing the messsages
-    message.innerHTML = `Your BMI is ${bmi} kg/m<sup>2</sup>.`;
+    message.innerHTML = `Your BMI is ${personData.bmi()} kg/m<sup>2</sup>.`;
     //Stablishing the conditional
-    if(bmi > 30) {
+    if(personData.bmi() > 30) {
         message2.style.color = "red";
         message2.innerHTML = "Warning! You are overweight.";
     } else {
