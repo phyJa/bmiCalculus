@@ -1,3 +1,11 @@
+//Display the answers
+    //First, store the element in a variable
+    let answers = document.querySelector("#answers");
+    //Add an event listener to the button
+    let buttonListener = document.querySelector("form button");
+    //Remove the class "notDisplaying" from the answers
+    buttonListener.addEventListener("click", () => {answers.classList.remove("notDisplaying");});
+
 //Get the values from the user
 function calculate() {
     //Preparing the messages

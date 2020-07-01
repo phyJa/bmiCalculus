@@ -52,11 +52,11 @@ button:hover {
     cursor: pointer;
 }
 
-.notDisplaying {
+#answers.notDisplaying {
     display: none;
 }
 
-.answers {
+#answers {
     background-color: #c2c2c2;
     width: 60%;
     margin: 30px auto;
