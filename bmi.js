@@ -16,6 +16,7 @@ function calculate() {
     message2.innerHTML = "";
     //Declaring the constants
     const personData = {
+        name: document.getElementById("name").value,
         height: document.getElementById("height").value,
         mass: document.getElementById("mass").value,
         bmi: function() {
@@ -23,7 +24,7 @@ function calculate() {
         }
     };
     //Printing the messsages
-    message.innerHTML = `Your BMI is ${personData.bmi()} kg/m<sup>2</sup>.`;
+    message.innerHTML = `Hello, ${personData.name}! Your BMI is ${personData.bmi()} kg/m<sup>2</sup>.`;
     //Stablishing the conditional
     if(personData.bmi() > 30) {
         message2.style.color = "red";
