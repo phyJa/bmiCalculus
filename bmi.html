@@ -16,19 +16,40 @@
             <!-- Take name -->
             <label for="name"> Type your name here: </label> 
             <input type="text" id="name" placeholder="Your name goes here" />
+            
+            <!-- BMI -->
+            <h3>BMI calculation</h3>
             <!-- Take mass -->
             <label for="mass"> Put your mass (in kg): </label> 
             <input type="number" id="mass" placeholder="Type only numbers" />
             <!-- Take the height -->
             <label for="height"> Now your height (in meters): </label>
             <input type="number" id="height" placeholder="Type only numbers" />
+
+            <!--Retirement-->
+            <h3>Data refering to retirement</h3>
+            <!-- Age -->
+            <label for="age"> How old are you? (in years) </label> 
+            <input type="number" id="age" placeholder="Type only numbers" />
+            <!-- Time of work -->
+            <label for="time_of_work"> How long have you worked? (in years) </label>
+            <input type="number" id="time_of_work" placeholder="Type only numbers" />
+            <!-- Gender -->
+            <p>What is your gender?</p>
+            <div class="gender">
+                <input type="radio" name="gender" value="male" /> Male
+                <input type="radio" name="gender" value="female" /> Female
+            </div>
             <!-- The button to activate the script -->
             <button type="button" onclick="calculate()"> Calculate </button>
         </form>
         <!--Show the answers: -->
         <div id="answers" class="notDisplaying">
+            <h3>BMI Information</h3>
             <p id="answer">Answer1</p>
             <p id="answer2">Answer2</p>
+            <h3>Retirement Answer</h3>
+            <p id="answer3">Answer3</p>
         </div>
         <!--Scrripts-->
         <script src="bmi.js"></script>
