@@ -21,9 +21,8 @@ function calculate() {
         name: document.getElementById("name").value,
         height: document.getElementById("height").value,
         mass: document.getElementById("mass").value,
-        age: document.getElementById("mass").age,
+        age: document.getElementById("age").age,
         timeOfWork: document.getElementById("time_of_work").value,
-        gender: document.getElementsByName("gender").value,
         bmi: function() {
             return this.mass / (this.height * this.height);
         }
@@ -38,12 +37,4 @@ function calculate() {
         message2.style.color = "blue";
         message2.innerHTML = "You are not overweight.";
     }
-    //Answers of retirement
-    message3.innerHTML = personData.gender;
-    // if(personData.gender === "male") {
-    //     message3.innerHTML = "You are male";
-    // } else {
-    //     message3.innerHTML = "You are female";
-    // }
-    
 }
