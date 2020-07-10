@@ -12,17 +12,13 @@ function calculate() {
     var message, message2, message3 ;
     message = document.getElementById("answer");
     message2 = document.getElementById("answer2");
-    message3 = document.getElementById("answer3");
-    message.innerHTML = "";
-    message2.innerHTML = "";
-    message3.innerHTML = "";
+    message.innerHTML = " ";
+    message2.innerHTML = " ";
     //Declaring the constants
     const personData = {
         name: document.getElementById("name").value,
         height: document.getElementById("height").value,
         mass: document.getElementById("mass").value,
-        age: document.getElementById("age").age,
-        timeOfWork: document.getElementById("time_of_work").value,
         bmi: function() {
             return this.mass / (this.height * this.height);
         }
@@ -36,5 +32,5 @@ function calculate() {
     } else {
         message2.style.color = "blue";
         message2.innerHTML = "You are not overweight.";
-    }
+    }   
 }
